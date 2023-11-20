@@ -916,6 +916,9 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.portfolio {
+  background-color: #f9f8ff;
+}
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
