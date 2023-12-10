@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Community Hub</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/logownobg.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+ <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="index.html">Lo-Temp</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="../../index.html#home">Home</a></li>
+          <li><a class="nav-link scrollto" href="../../index.html#about">The Goal</a></li>
+          <li><a class="nav-link scrollto " href="../../index.html#services">Plan</a></li>
+          <li><a class="nav-link scrollto" href="../../index.html#portfolio">Photos</a></li>
+          <li><a class="nav-link scrollto" href="../blog.html">Blog</a></li>
+          <li><a class="getstarted scrollto" href="#about">Play the Game</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <br>
+    <br>
+
+    <!-- ======= Blog Single Section ======= -->
+    <section id="blog" class="blog">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-8 entries">
+
+            <article class="entry entry-single">
+
+              <div class="entry-img">
+                <img src="../assets/img/schrodcat.png" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="entry-title">
+                <a href="">Schrödinger’s Cat: Student-Written Article</a>
+              </h2>
+
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="">Lo-Temp Team</a>
+                  </li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href=""><time
+                        datetime="2020-01-01">November 20th, 2023</time></a></li>
+                </ul>
+              </div>
+
+              <div class="entry-content">
+                <p> Ever heard the phrase, "curiosity kills the cat?" In 1935, physicist Erwin Schrödinger took this to the next level by introducing one of the most famous thought experiments in quantum mechanics. It goes like this: a cat is trapped in a box, and the box has a vial of cyanide inside. The vial is controlled so that it has a 50% chance of breaking (and killing the cat) and a 50% chance of remaining intact (and letting the cat live).
+<br><br>
+
+                <p>
+                 Schrödinger's Cat is a quintessential demonstration of superposition: the idea that an object can be in multiple states at once. When the cat is inside the box, you have no way of knowing whether it is alive or dead until you open the box and take a peek inside. We could say the cat is in a superposition of two states; it is alive and dead at the same time. We can only know for sure which one it is when we look; in other words, we need to perform a measurement and "collapse" its state of being both dead and alive to a state of dead or alive.  <br><br>
+                </p>
+                <p>
+Of course, quantum mechanics deals less with cats and more with particles, like electrons. In fact, Schrödinger created this thought experiment as a "quite ridiculous" case to show how quantum mechanics isn't principally correct at the macroscopic level. This is because macroscopic bodies, like a cat, are composed of so many quantum interactions that they are practically being measured each time an interaction occurs. <br><br>
+                </p>
+                <p>
+                It can be difficult to wrap your head around the concept of something being two things at once, and only collapsing to one state when you look at it. Even Einstein found it confusing; for instance, in an argument, he asked, "If you look away from the moon, does that mean it stops existing?" Schrödinger's Cat's doesn't say that cats can be both dead and alive at the same time; rather, it serves as a conduit to understand the essence of superposition and measurement in smaller quantum systems. A particle, for instance, can be in multiple positions at once, and only collapses to one position when it is measured. 
+                </p>
+
+
+
+            </article><!-- End blog entry -->
+
+
+          </div><!-- End blog entries list -->
+
+          <div class="col-lg-4">
+
+            <div class="sidebar">
+
+              <h3 class="sidebar-title">Blog</h3>
+              <p> Welcome to our blog page, where we'll share updates about our progress with the app, as well as what we've been up to 
+                outside of that! <br> <br>
+
+                We hope you enjoy learning about our journey, as you look through both our technical progress and our community involvement!
+                All photos are also viewable on the gallery section of our home page. <br> <br>
+
+                - Lo-Temp Team</p>
+
+
+            </div><!-- End sidebar -->
+
+          </div><!-- End blog sidebar -->
+
+        </div>
+
+      </div>
+    </section><!-- End Blog Single Section -->
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
