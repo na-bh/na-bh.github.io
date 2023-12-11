@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Community Hub</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/logownobg.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+ <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="index.html">Lo-Temp</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="../../index.html#home">Home</a></li>
+          <li><a class="nav-link scrollto" href="../../index.html#about">The Goal</a></li>
+          <li><a class="nav-link scrollto " href="../../index.html#services">Plan</a></li>
+          <li><a class="nav-link scrollto" href="../../index.html#portfolio">Photos</a></li>
+          <li><a class="nav-link scrollto" href="../blog.html">Blog</a></li>
+          <li><a class="getstarted scrollto" href="#about">Play the Game</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <br>
+    <br>
+
+    <!-- ======= Blog Single Section ======= -->
+    <section id="blog" class="blog">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-8 entries">
+
+            <article class="entry entry-single">
+
+              <div class="entry-img">
+                <img src="../assets/img/algorithm.png" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="entry-title">
+                <a href="">Pathfinding Algorithms Overview</a>
+              </h2>
+
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="">Lo-Temp Team</a>
+                  </li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href=""><time
+                        datetime="2020-01-01">December 10th, 2023</time></a></li>
+                </ul>
+              </div>
+
+              <div class="entry-content">
+                <p> We thought it would be helpful to explain how our pathfinding and communication link checkpoint selection works. 
+  <br><br></p>
+
+                <p>
+For pathfinding, we use Dijkstra's Algorithm and Theta*. These algorithms operate on graphs consisting of nodes and edges and allow us to find the optimal routes between points under some minimization criteria. We use Dijkstra's Algorithm to minimize the amount of hill-climbing done. To use Dijkstra’s Algorithm, we first take our graph and perform a preprocessing step known as Node Splitting on it such that all information is contained solely in the edges. Each edge stores the slope between its two nodes, so we can then apply Dijkstra’s algorithm to find the path that minimizes the cumulative weight—the path with the least hill climbing.
+ <br><br>
+                </p>
+                 <p>
+We use Theta* to minimize the distance between two locations while adhering to the maximum slope restriction. Theta* is a variant of the more well-known algorithm A* that allows for something known as any-angle path planning. Any-angle path planning takes advantage of the fact that the grid of nodes is really sampled from an underlying continuous surface and so allows us to travel directly between two nodes assuming there is a “line-of-sight” to that node, reducing the travel distance compared to if we were forced to travel along the grid lines. This line-of-sight check makes sure that there are no “obstacles” (locations on the grid that we cannot travel through) between two nodes, ensuring the validity of the path. In our case, the obstacles correspond to nodes whose slopes are greater than the maximum threshold.
+ <br><br>
+                </p>
+                 <p>
+To select the optimal communication link checkpoints, we divide up the path into eleven segments of equal length. This allows us to find the ideal case checkpoints which are optimally spaced along the path. We then check whether each of these points is a valid location for a checkpoint (whether its elevation angle to the earth is greater than its elevation angle to the horizon). We do this check with accurate data provided by the SPICE toolkit. If any points are invalid locations, we move their locations along the path, check whether they are now valid, and iterate until all checkpoints are at valid locations. We may then adjust the other points if possible to attempt a more even spread of the checkpoints. This minimizes the deviation from the ideal case and allows us to space out the points optimally. 
+                </p>
+
+            </article><!-- End blog entry -->
+
+
+          </div><!-- End blog entries list -->
+
+          <div class="col-lg-4">
+
+            <div class="sidebar">
+
+              <h3 class="sidebar-title">Blog</h3>
+              <p> Welcome to our blog page, where we'll share updates about our progress with the app, as well as what we've been up to 
+                outside of that! <br> <br>
+
+                We hope you enjoy learning about our journey, as you look through both our technical progress and our community involvement!
+                All photos are also viewable on the gallery section of our home page. <br> <br>
+
+                - Lo-Temp Team</p>
+
+
+            </div><!-- End sidebar -->
+
+          </div><!-- End blog sidebar -->
+
+        </div>
+
+      </div>
+    </section><!-- End Blog Single Section -->
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
