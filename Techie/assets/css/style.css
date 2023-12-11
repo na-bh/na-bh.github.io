@@ -1652,6 +1652,13 @@ section {
   padding: 40px 0 20px 0;
 }
 
+.blog .body {
+  background-image: url('starrynight.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .blog .entry {
   padding: 30px;
   margin-bottom: 60px;
