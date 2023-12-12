@@ -827,7 +827,7 @@ section {
 
 .testimonials .testimonial-item {
   box-sizing: content-box;
-  min-height: 660px;
+  min-height: 320px;
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -881,7 +881,8 @@ section {
   border-radius: 6px;
   position: relative;
   z-index: 1;
-  min-height: 100px;
+  box-sizing: content-box;
+  min-height: 10px;
   box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
